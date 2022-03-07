@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-content-1 {
+  background: url('/public/img/login_bg.jpg') no-repeat;
+  min-height: 85vh;
+  background-size: cover;
+}
