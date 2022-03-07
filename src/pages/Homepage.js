@@ -6,8 +6,6 @@ const Homepage = () => {
     const [activeflag , setActiveflag ] = useState(1);
     return(
         <div className="App min-h-screen">
-        {console.log(activeflag)}
-
             <div className="bg-sky-700">
                 <div className="container mx-auto">
                     <div className='grid grid-cols-12 gap-4 py-2'>
@@ -26,7 +24,7 @@ const Homepage = () => {
             </div>
             <div className="bg-sky-800">
                 <div className="container mx-auto">
-                    <ul className="flex h-14 flex-wrap text-white">
+                    <ul className="flex min-h-14 flex-wrap text-white">
                         <li className={activeflag===1?"inline p-3 pt-4 border-b-4 border-lime-500 mb-0 text-lime-500":"inline p-3 pt-4 border-b-4 border-sky-800 hover:bg-lime-500 hover:border-lime-500"} onClick={()=>setActiveflag(1)}><Link to="/">cleaning</Link></li>
                         <li className={activeflag===2?"inline p-3 pt-4 border-b-4 border-lime-500 mb-0 text-lime-500":"inline p-3 pt-4 border-b-4 border-sky-800 hover:bg-lime-500 hover:border-lime-500"} onClick={()=>setActiveflag(2)}><Link to="/">relocation</Link></li>
                         <li className={activeflag===3?"inline p-3 pt-4 border-b-4 border-lime-500 mb-0 text-lime-500":"inline p-3 pt-4 border-b-4 border-sky-800 hover:bg-lime-500 hover:border-lime-500"} onClick={()=>setActiveflag(3)}><Link to="/">painter</Link></li>
